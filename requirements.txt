@@ -1,8 +1,7 @@
 opencv-contrib-python-headless
-tensorflow-cpu
+tensorflow
 streamlit
 numpy
-torch
 pandas
 keras
 pathlib

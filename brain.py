@@ -28,7 +28,7 @@ st.caption("Warning: Do not click Recognize button before uploading image. It wi
 # Load the model
 @st.cache
 def loadmodel():
-	  return torch.load("Brain_Tumor_Image_Classification_Model(2).h5")
+	  return load_model("Brain_Tumor_Image_Classification_Model(2).h5")
 
 model = loadmodel()
 

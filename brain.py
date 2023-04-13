@@ -24,9 +24,8 @@ st.caption("Warning: Do not click Recognize button before uploading image. It wi
 
 
 
-# Load the model
 @st.cache
-        model = load_model("Brain_Tumor_Image_Classification_Model(2).h5")
+model = load_model("Brain_Tumor_Image_Classification_Model(2).h5")
 
 
 

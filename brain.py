@@ -1,5 +1,5 @@
 import streamlit as st
-
+import torch
 
 
 from tensorflow.keras.models import load_model
@@ -25,8 +25,12 @@ st.caption("Warning: Do not click Recognize button before uploading image. It wi
 
 
 # Load the model
+@st.cache
+def loadmodel():
+	  return torch.load("Brain_Tumor_Image_Classification_Model(2).h5")
 
-model = load_model("Brain_Tumor_Image_Classification_Model(2).h5")
+model = loadmodel()
+
 
 
 
@@ -40,7 +44,6 @@ class_names = ['no_tumor', 'pituitary_tumor', 'meningioma_tumor', 'glioma_tumor'
 
 # Fxn
 
-@st.cache_data
 def load_image(image_file):
 
         img = Image.open(image_file)

@@ -3,8 +3,6 @@ tensorflow
 streamlit
 numpy
 pandas
-pillow
 keras
 pathlib
 matplotlib
-python-resize-image

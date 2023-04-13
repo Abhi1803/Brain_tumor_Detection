@@ -40,8 +40,7 @@ class_names = ['no_tumor', 'pituitary_tumor', 'meningioma_tumor', 'glioma_tumor'
 
 # Fxn
 
-@st.cache
-
+@st.cache_data
 def load_image(image_file):
 
         img = Image.open(image_file)

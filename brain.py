@@ -25,7 +25,7 @@ st.caption("Warning: Do not click Recognize button before uploading image. It wi
 
 
 
-model = load_model("C:/Users/Admin/anaconda3/envs/brain_tumor/Brain_Tumor_Image_Classification_Model(2).h5",compile=False)
+model = load_model("Brain_Tumor_Image_Classification_Model(2).h5",compile=False)
 model.compile(
     loss = 'categorical_crossentropy',
     optimizer = 'Adam',
